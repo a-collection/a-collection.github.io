@@ -5,7 +5,7 @@ function searching() {
     ul = document.getElementById("webappList");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByTagName("span")[0];
         if (a.innerHTML.toUpperCase().indexOf(autocomplete) > -1) {
             li[i].style.display = "";
         } else {

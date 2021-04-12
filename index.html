@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,48 +18,152 @@
     <!-- Main.js -->
     <script src="main.js"></script>
 </head>
-<body>
-  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start py-2 border-bottom">
 
-    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-5 link-secondary fw-bold"><?xml version="1.0" encoding="UTF-8"?>
-        <svg width="163px" height="37px" viewBox="0 0 163 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>apuem</title>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SpaceGrotesk-Light_Bold, Space Grotesk" font-size="20" font-weight="bold" letter-spacing="0.187903833">
-                <g id="A4-Copy-2" transform="translate(-90.000000, -66.000000)" fill="#000000">
-                    <text id="apuem">
-                        <tspan x="89" y="92">apuem</tspan>
-                    </text>
-                </g>
-            </g>
-        </svg></a></li>
-    </ul>
-    <div class="dropdown text-end mx-5">
-      <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="bi bi-three-dots"></i>
-      </a>
-      <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-        <li><a class="dropdown-item" href="#">About</a></li>
-        <li><a class="dropdown-item" href="#">Create</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Imprint</a></li>
-        <li><a class="dropdown-item" href="#">Data Policy</a></li>
-      </ul>
+<body>
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start py-2 border-bottom">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+                <a href="#" class="nav-link px-5 link-secondary fw-bold">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="163px" height="37px" viewBox="0 0 163 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>apuem</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SpaceGrotesk-Light_Bold, Space Grotesk" font-size="20" font-weight="bold" letter-spacing="0.187903833">
+                                <g id="A4-Copy-2" transform="translate(-90.000000, -66.000000)" fill="#000000">
+                                    <text id="apuem">
+                                        <tspan x="89" y="92">apuem</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown text-end mx-5">
+            <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-three-dots"></i>
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Create</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Imprint</a></li>
+                <li><a class="dropdown-item" href="#">Data Policy</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <p style="margin-top: 7.5rem;" class="display-3 fw-bold text-center">We collect web apps.</p>
-  <div class="py-5 row justify-content-center">
-    <div class="col-sm-4 input-group-lg">
-      <input placeholder="Search" onkeyup="searching()" type="text" name="search" class="form-control" id="search" autofocus>
+    <p style="margin-top: 7.5rem;" class="display-3 fw-bold text-center">We collect web apps.</p>
+    <div class="py-5 row justify-content-center">
+        <div class="col-sm-4 input-group-lg">
+            <input placeholder="Search" onkeyup="searching()" type="text" name="search" class="form-control" id="search" autofocus>
+        </div>
     </div>
-  </div>
-  <div class="card mx-auto mt-5" style="width: 50rem;">
-    <div class="card-header fw-bold">
-      All  Web Apps
+    <div class="card mx-auto mt-5" style="width: 50rem;">
+        <div class="card-header fw-bold">
+            All Web Apps
+        </div>
+        <ul id="webappList" class="list-group list-group-flush">
+            <a href="https://a-collection.github.io/lorem-ipsum">
+                <li class="list-group-item"><span>Lorem Ispum Generator</span><span class="text-secondary badge">AP0</span></li>
+            </a>
+            <a href="https://a-collection.github.io/random-number">
+                <li class="list-group-item"><span>Random Number Generator</span><span class="text-secondary badge">AP1</span></li>
+            </a>
+            <a href="https://a-collection.github.io/password">
+                <li class="list-group-item"><span>Password Generator</span><span class="text-secondary badge">AP2</span></li>
+            </a>
+            <a href="https://a-collection.github.io/worldclock">
+                <li class="list-group-item"><span>World Clock</span><span class="text-secondary badge">AP3</span></li>
+            </a>
+            <a href="https://a-collection.github.io/qr-scanner">
+                <li class="list-group-item"><span>QR-Code Scanner</span><span class="text-secondary badge">AP4</span></li>
+            </a>
+            <a href="https://a-collection.github.io/rotate-image">
+                <li class="list-group-item"><span>Image Rotator</span><span class="text-secondary badge">AP5</span></li>
+            </a>
+            <a href="https://a-collection.github.io/mp4">
+                <li class="list-group-item"><span>Convert to .mp4</span><span class="text-secondary badge">AP6</span></li>
+            </a>
+            <a href="https://a-collection.github.io/pdf">
+                <li class="list-group-item"><span>Convert to .pdf</span><span class="text-secondary badge">AP7</span></li>
+            </a>
+            <a href="https://a-collection.github.io/rtf">
+                <li class="list-group-item"><span>Convert to .rtf</span><span class="text-secondary badge">AP8</span></li>
+            </a>
+            <a href="https://a-collection.github.io/word-count">
+                <li class="list-group-item"><span>Word Counter</span><span class="text-secondary badge">AP9</span></li>
+            </a>
+            <a href="https://a-collection.github.io/ip">
+                <li class="list-group-item"><span>IP Adress Analysis</span><span class="text-secondary badge">AP10</span></li>
+            </a>
+            <a href="https://a-collection.github.io/stopwatch">
+                <li class="list-group-item"><span>Stopwatch</span><span class="text-secondary badge">AP11</span></li>
+            </a>
+            <a href="https://a-collection.github.io/timer">
+                <li class="list-group-item"><span>Timer</span><span class="text-secondary badge">AP12</span></li>
+            </a>
+            <a href="https://a-collection.github.io/alarm">
+                <li class="list-group-item"><span>Alarm</span><span class="text-secondary badge">AP13</span></li>
+            </a>
+            <a href="https://a-collection.github.io/resize-image">
+                <li class="list-group-item"><span>Image Resizer</span><span class="text-secondary badge">AP14</span></li>
+            </a>
+            <a href="https://a-collection.github.io/crop-image">
+                <li class="list-group-item"><span>Image Cropper</span><span class="text-secondary badge">AP15</span></li>
+            </a>
+            <a href="https://a-collection.github.io/opacity">
+                <li class="list-group-item"><span>Image Opacity</span><span class="text-secondary badge">AP16</span></li>
+            </a>
+            <a href="https://a-collection.github.io/black-white">
+                <li class="list-group-item"><span>Image Black-White</span><span class="text-secondary badge">AP17</span></li>
+            </a>
+            <a href="https://a-collection.github.io/image-watermark">
+                <li class="list-group-item"><span>Image Watermark</span><span class="text-secondary badge">AP18</span></li>
+            </a>
+            <a href="https://a-collection.github.io/preview">
+                <li class="list-group-item"><span>File Preview</span><span class="text-secondary badge">AP19</span></li>
+            </a>
+            <a href="https://a-collection.github.io/edit-pdf">
+                <li class="list-group-item"><span>Edit PDF</span><span class="text-secondary badge">AP20</span></li>
+            </a>
+            <a href="https://a-collection.github.io/unarchive">
+                <li class="list-group-item"><span>Unarchive File</span><span class="text-secondary badge">AP21</span></li>
+            </a>
+            <a href="https://a-collection.github.io/nonsense">
+                <li class="list-group-item"><span>Nonsense Pages</span><span class="text-secondary badge">AP22</span></li>
+            </a>
+            <a href="https://a-collection.github.io/beautiful">
+                <li class="list-group-item"><span>Beautiful Pages</span><span class="text-secondary badge">AP23</span></li>
+            </a>
+            <a href="https://a-collection.github.io/compress">
+                <li class="list-group-item"><span>Compress File</span><span class="text-secondary badge">AP24</span></li>
+            </a>
+            <a href="https://a-collection.github.io/network-speed">
+                <li class="list-group-item"><span>Network Speedtest</span><span class="text-secondary badge">AP25</span></li>
+            </a>
+            <a href="https://a-collection.github.io/calculator">
+                <li class="list-group-item"><span>Calculator</span><span class="text-secondary badge">AP26</span></li>
+            </a>
+            <a href="https://a-collection.github.io/crop-audio">
+                <li class="list-group-item"><span>Crop Audio</span><span class="text-secondary badge">AP27</span></li>
+            </a>
+            <a href="https://a-collection.github.io/reverse-audio">
+                <li class="list-group-item"><span>Reverse Audio</span><span class="text-secondary badge">AP28</span></li>
+            </a>
+            <a href="https://a-collection.github.io/split-pdf">
+                <li class="list-group-item"><span>Split PDF</span><span class="text-secondary badge">AP29</span></li>
+            </a>
+            <a href="https://a-collection.github.io/reverse-video">
+                <li class="list-group-item"><span>Reverse Video</span><span class="text-secondary badge">AP30</span></li>
+            </a>
+            <a href="https://a-collection.github.io/crop-video">
+                <li class="list-group-item"><span>Crop Video</span><span class="text-secondary badge">AP31</span></li>
+            </a>
+        </ul>
     </div>
-    <ul id="webappList" class="list-group list-group-flush">
-      <a href="https://a-collection.github.io/lorem-ipsum"><li class="list-group-item"><span>Lorem Ispum Generator</span><span class="text-secondary badge">AP0</span></li></a><a href="https://a-collection.github.io/random-number"><li class="list-group-item"><span>Random Number Generator</span><span class="text-secondary badge">AP1</span></li></a><a href="https://a-collection.github.io/password"><li class="list-group-item"><span>Password Generator</span><span class="text-secondary badge">AP2</span></li></a><a href="https://a-collection.github.io/worldclock"><li class="list-group-item"><span>World Clock</span><span class="text-secondary badge">AP3</span></li></a><a href="https://a-collection.github.io/qr-scanner"><li class="list-group-item"><span>QR-Code Scanner</span><span class="text-secondary badge">AP4</span></li></a><a href="https://a-collection.github.io/rotate-image"><li class="list-group-item"><span>Image Rotator</span><span class="text-secondary badge">AP5</span></li></a><a href="https://a-collection.github.io/mp4"><li class="list-group-item"><span>Convert to .mp4</span><span class="text-secondary badge">AP6</span></li></a><a href="https://a-collection.github.io/pdf"><li class="list-group-item"><span>Convert to .pdf</span><span class="text-secondary badge">AP7</span></li></a><a href="https://a-collection.github.io/rtf"><li class="list-group-item"><span>Convert to .rtf</span><span class="text-secondary badge">AP8</span></li></a><a href="https://a-collection.github.io/word-count"><li class="list-group-item"><span>Word Counter</span><span class="text-secondary badge">AP9</span></li></a><a href="https://a-collection.github.io/ip"><li class="list-group-item"><span>IP Adress Analysis</span><span class="text-secondary badge">AP10</span></li></a><a href="https://a-collection.github.io/stopwatch"><li class="list-group-item"><span>Stopwatch</span><span class="text-secondary badge">AP11</span></li></a><a href="https://a-collection.github.io/timer"><li class="list-group-item"><span>Timer</span><span class="text-secondary badge">AP12</span></li></a><a href="https://a-collection.github.io/alarm"><li class="list-group-item"><span>Alarm</span><span class="text-secondary badge">AP13</span></li></a><a href="https://a-collection.github.io/resize-image"><li class="list-group-item"><span>Image Resizer</span><span class="text-secondary badge">AP14</span></li></a><a href="https://a-collection.github.io/crop-image"><li class="list-group-item"><span>Image Cropper</span><span class="text-secondary badge">AP15</span></li></a><a href="https://a-collection.github.io/opacity"><li class="list-group-item"><span>Image Opacity</span><span class="text-secondary badge">AP16</span></li></a><a href="https://a-collection.github.io/black-white"><li class="list-group-item"><span>Image Black-White</span><span class="text-secondary badge">AP17</span></li></a><a href="https://a-collection.github.io/image-watermark"><li class="list-group-item"><span>Image Watermark</span><span class="text-secondary badge">AP18</span></li></a><a href="https://a-collection.github.io/preview"><li class="list-group-item"><span>File Preview</span><span class="text-secondary badge">AP19</span></li></a><a href="https://a-collection.github.io/edit-pdf"><li class="list-group-item"><span>Edit PDF</span><span class="text-secondary badge">AP20</span></li></a><a href="https://a-collection.github.io/unarchive"><li class="list-group-item"><span>Unarchive File</span><span class="text-secondary badge">AP21</span></li></a><a href="https://a-collection.github.io/nonsense"><li class="list-group-item"><span>Nonsense Pages</span><span class="text-secondary badge">AP22</span></li></a><a href="https://a-collection.github.io/beautiful"><li class="list-group-item"><span>Beautiful Pages</span><span class="text-secondary badge">AP23</span></li></a><a href="https://a-collection.github.io/compress"><li class="list-group-item"><span>Compress File</span><span class="text-secondary badge">AP24</span></li></a><a href="https://a-collection.github.io/network-speed"><li class="list-group-item"><span>Network Speedtest</span><span class="text-secondary badge">AP25</span></li></a><a href="https://a-collection.github.io/calculator"><li class="list-group-item"><span>Calculator</span><span class="text-secondary badge">AP26</span></li></a><a href="https://a-collection.github.io/crop-audio"><li class="list-group-item"><span>Crop Audio</span><span class="text-secondary badge">AP27</span></li></a><a href="https://a-collection.github.io/reverse-audio"><li class="list-group-item"><span>Reverse Audio</span><span class="text-secondary badge">AP28</span></li></a><a href="https://a-collection.github.io/split-pdf"><li class="list-group-item"><span>Split PDF</span><span class="text-secondary badge">AP29</span></li></a><a href="https://a-collection.github.io/reverse-video"><li class="list-group-item"><span>Reverse Video</span><span class="text-secondary badge">AP30</span></li></a><a href="https://a-collection.github.io/crop-video"><li class="list-group-item"><span>Crop Video</span><span class="text-secondary badge">AP31</span></li></a></ul>
-  </div>
-  
+
 </body>
+
 </html>
